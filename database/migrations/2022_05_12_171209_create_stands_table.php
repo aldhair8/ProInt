@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('stands', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('numberstand');
             $table->enum('status',['alquilado','empadronado','problemas']);
             $table->unsignedBigInteger('associate_id');
             $table->foreign('associate_id')->references('id')->on('associates')->onDelete('cascade');

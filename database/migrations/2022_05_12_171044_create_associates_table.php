@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('birthdate');
             $table->string('dni');
-            $table->string('cellphone');
+            $table->string('phone');
             $table->string('degree');
             $table->string('email');
             $table->string('civile_status');

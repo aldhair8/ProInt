@@ -11,12 +11,15 @@ class Assistance extends Model
     public function associate(){
         return $this->belongsTo(associates::class);
     }
+
     public function activity(){
         return $this->belongsTo(activities::class);
     }
+
     public function payment(){
         return $this->hasOne(payments::class);
     }
+
     public function fine(){
         return $this->hasOne(fines::class);
     }

@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('sons', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
-            $table->string('cellphone');
+            $table->string('name');
+            $table->string('lastname');
+            $table->string('phone');
             $table->string('email');
             $table->string('dni');
             $table->string('age');

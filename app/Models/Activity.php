@@ -11,9 +11,11 @@ class Activity extends Model
     public function assistances(){
         return $this->hasMany(assistances::class);
     }
+
     public function payment(){
         return $this->hasOne(payments::class);
     }
+
     public function user(){
         return $this->belongsTo(user::class);
     }

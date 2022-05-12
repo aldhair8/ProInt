@@ -10,8 +10,8 @@ class Associate extends Model
     use HasFactory;
     public function user(){
         return $this->belongsTo(User::class);
-
     }
+
     public function sons(){
         return $this->hasMany(sons::class);
 
@@ -21,6 +21,7 @@ class Associate extends Model
         return $this->hasMany(spouses::class);
 
     }
+
     public function assistances(){
         return $this->hasMany(assistances::class);
 

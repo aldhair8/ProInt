@@ -11,4 +11,5 @@ class Son extends Model
     public function associate(){
         return $this->belongsTo(associates::class);
     }
+
 }
